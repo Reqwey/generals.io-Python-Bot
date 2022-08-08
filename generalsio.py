@@ -29,8 +29,8 @@ class GameClient(object):
     """
     A small SDK for the http://generals.io bot API.
     """
-    SERVER_URL = 'http://botws.generals.io'
-    REPLAY_URL_TEMPLATE = 'http://bot.generals.io/replays/%s'
+    SERVER_URL = 'https://botws.generals.io'
+    REPLAY_URL_TEMPLATE = 'https://bot.generals.io/replays/%s'
 
     def __init__(self, user_id, username):
         self._sock = SocketIO(GameClient.SERVER_URL, 80, BaseNamespace)
